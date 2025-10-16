@@ -30,6 +30,7 @@ public class MenuArchivos extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        jLabel1 = new javax.swing.JLabel();
         menuBar = new javax.swing.JMenuBar();
         menuArchivo = new javax.swing.JMenu();
         btnNuevo = new javax.swing.JMenuItem();
@@ -39,6 +40,9 @@ public class MenuArchivos extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Menu Archivos");
         setResizable(false);
+
+        jLabel1.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        jLabel1.setText("En esta pestaña se podrá crear y guardar un archivo");
 
         menuArchivo.setText("Archivo");
 
@@ -75,11 +79,17 @@ public class MenuArchivos extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 560, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(18, 18, 18)
+                .addComponent(jLabel1)
+                .addContainerGap(31, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 420, Short.MAX_VALUE)
+            .addGroup(layout.createSequentialGroup()
+                .addGap(34, 34, 34)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 102, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(94, Short.MAX_VALUE))
         );
 
         pack();
@@ -134,6 +144,7 @@ public class MenuArchivos extends javax.swing.JFrame {
     private javax.swing.JMenuItem btnGuardar;
     private javax.swing.JMenuItem btnNuevo;
     private javax.swing.JMenuItem btnSalir;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JMenu menuArchivo;
     private javax.swing.JMenuBar menuBar;
     // End of variables declaration//GEN-END:variables
