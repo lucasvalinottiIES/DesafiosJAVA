@@ -2,10 +2,10 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JFrame.java to edit this template
  */
-package Desafio11.Conversor;
+package Vista;
 
-import static Desafio11.Conversor.Controlador.celsiusAFahrenheitController;
-import static Desafio11.Conversor.Controlador.fahrenheitACelsiusController;
+import static Controlador.Controlador.celsiusAFahrenheitController;
+import static Controlador.Controlador.fahrenheitACelsiusController;
 
 /**
  *
