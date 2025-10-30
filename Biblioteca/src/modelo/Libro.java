@@ -12,7 +12,7 @@ public class Libro {
     private int id;
     private String titulo;
     private String autor;
-    private java.time.LocalDateTime anoPublicacion;
+    private String anoPublicacion;
     private String isbn;
     private boolean disponible;
     
@@ -21,7 +21,7 @@ public class Libro {
     }
 
     // Constructor con parámetros
-    public Libro(int id, String titulo, String autor, java.time.LocalDateTime anoPublicacion, String isbn, boolean disponible) {
+    public Libro(int id, String titulo, String autor, String anoPublicacion, String isbn, boolean disponible) {
         this.id = id;
         this.titulo = titulo;
         this.autor = autor;
@@ -55,11 +55,11 @@ public class Libro {
         this.autor = autor;
     }
 
-    public java.time.LocalDateTime getAnoPublicacion() {
+    public String getAnoPublicacion() {
         return anoPublicacion;
     }
 
-    public void setAnoPublicacion(java.time.LocalDateTime anoPublicacion) {
+    public void setAnoPublicacion(String anoPublicacion) {
         this.anoPublicacion = anoPublicacion;
     }
 
