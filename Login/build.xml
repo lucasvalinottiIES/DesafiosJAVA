@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Login" default="default" basedir=".">
+    <description>Builds, tests, and runs the project Login.</description>
+
+    <!-- 🔹 Importa la configuración generada por NetBeans -->
+    <import file="nbproject/build-impl.xml"/>
+
+    <!-- ===================================================== -->
+    <!-- 🔹 BLOQUES PERSONALIZADOS PARA LIBRERÍAS EXTERNAS -->
+    <!-- ===================================================== -->
+
+    <!-- Define la carpeta de librerías -->
+    <property name="lib.dir" value="lib"/>
+
+    <!-- Agrega todos los .jar dentro de /lib al classpath -->
+    <path id="project.classpath">
+        <fileset dir="${lib.dir}" includes="*.jar"/>
+    </path>
+
+    <!-- Hook: antes de compilar -->
+    <target name="-pre-compile">
+        <echo message="Incluyendo librerías externas desde /lib..."/>
+    </target>
+
+    <!-- Hook: después de compilar -->
+    <target name="-post-compile">
+        <echo message="Compilación completa con BCrypt y otras dependencias."/>
+    </target>
+</project>
