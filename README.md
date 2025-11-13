@@ -2,10 +2,10 @@ Desafío 9 - Swing
 
 Nombre de Archivos
 
-```src/desafios/Calculadora```
-```src/desafios/Tamanio```
-```src/desafios/SelectorLenguajes```
-```src/desafios/ValidadorEdad```
+```Desafios/src/desafios/Calculadora```
+```Desafios/src/desafios/Tamanio```
+```Desafios/src/desafios/SelectorLenguajes```
+```Desafios/src/desafios/ValidadorEdad```
 
 Desafio 11
 
